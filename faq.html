@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Travel Japan</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Travel Japan</h1>
+        <p>Explore the beauty and mystery of Japan with our travel guide</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#destinations">Destinations</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>1. What is the best time to visit Japan?</h3>
+                <p class="answer">The best time to visit Japan is during the spring (March to May) when cherry blossoms bloom, or during autumn (September to November) when the fall colors are breathtaking.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>2. Do I need a visa to travel to Japan?</h3>
+                <p class="answer">Citizens of many countries, including the US, Canada, and most EU countries, can visit Japan for up to 90 days without a visa for tourism purposes. Check with your local embassy for specific visa requirements.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>3. What is the best way to travel around Japan?</h3>
+                <p class="answer">The most efficient way to travel around Japan is by using the Japan Rail Pass, which provides unlimited travel on the country's extensive rail network. Alternatively, local trains, buses, and subways are convenient for short trips within cities.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>4. Are there any cultural norms or etiquette to be aware of?</h3>
+                <p class="answer">Yes, there are several cultural norms in Japan. For example, bowing is a common greeting, and it’s important to remove shoes when entering a home or certain public places. Tipping is not practiced in Japan.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>5. Can I use my credit card in Japan?</h3>
+                <p class="answer">Credit cards are widely accepted in major cities, especially in hotels, restaurants, and shops in tourist areas. However, in rural areas, cash is preferred. It’s a good idea to carry some cash when traveling outside of big cities.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>6. What should I pack for a trip to Japan?</h3>
+                <p class="answer">Packing depends on the season. For spring and autumn, light clothing with a jacket is advisable. Summer can be hot and humid, so light, breathable clothing is essential. Winters can be cold, especially in northern Japan, so pack warm clothes.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>7. How do I get a SIM card or Wi-Fi in Japan?</h3>
+                <p class="answer">SIM cards are available at airports, convenience stores, or electronics shops. Alternatively, you can rent a pocket Wi-Fi device to stay connected during your trip.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Contact</h3>
+                <ul>
+                    <li>Phone: +84 9418 6083</li>
+                    <li>Email: syhuytran2005@gmail.com</li>
+                    <li>Address: FPT University</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>FAQ</h3>
+                <ul>
+                    <li><a href="#faq">Visit FAQ Page</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>Made by Kerry</p>
+    </footer>
+
+    <script>
+        // FAQ toggle
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Japan</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Initialize the Slick Carousel
+            $('.gallery').slick({
+                slidesToShow: 3,      
+                slidesToScroll: 1,     
+                autoplay: true,       
+                autoplaySpeed: 2000, 
+                dots: true,   
+                arrows: true,       
+                infinite: true,    
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1, 
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2, 
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Travel Japan</h1>
+        <p>Enjoy the beauty of cherry blossom land</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Country or City">
+            <button onclick="searchFunction()">Search</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+<section id="destinations">
+    <h2>Featured Destinations</h2>
+    <div class="featured-destinations">
+        <div class="destination">
+            <a href="https://en.wikipedia.org/wiki/Kabukich%C5%8D" target="_blank">
+                <img src="https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2024-05/things-to-do-kabukicho_8.jpg?itok=ZaD-iB5G" alt="Kabukicho">
+                <h3>Kabukicho</h3>
+                <p>4 Nights, 3 Days</p>
+                <span class="read-more">Read more about Kabukicho</span>
+            </a>
+        </div>
+        <div class="destination">
+            <a href="https://en.wikipedia.org/wiki/Dotonbori" target="_blank">
+                <img src="https://ik.imagekit.io/tvlk/blog/2023/03/du-lich-dotonbori-17-1024x576.jpg?tr=q-70,w-625,dpr-2" alt="Dotonbori">
+                <h3>Dotonbori</h3>
+                <p>4 Nights, 3 Days</p>
+                <span class="read-more">Read more about Dotonbori</span>
+            </a>
+        </div>
+        <div class="destination">
+            <a href="https://en.wikipedia.org/wiki/Japan" target="_blank">
+                <img src="https://www.theinvisibletourist.com/wp-content/uploads/2017/04/featured_85.jpg" alt="Japan">
+                <h3>Japan</h3>
+                <p>4 Nights, 3 Days</p>
+                <span class="read-more">Read more about Japan</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="gallery">
+    <h2>Travel Gallery</h2>
+    <div class="gallery">
+        <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/84000/84406-Okinawa.jpg" alt="okinawa">
+        <img src="https://jw-webmagazine.com/wp-content/uploads/2024/04/Kabukicho-GodzillaRoad.jpg" alt="kabukicho2">
+        <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/492000/492094-dotonbori.jpg" alt="dotonbori">
+        <img src="https://i.pinimg.com/736x/b4/c5/ee/b4c5ee35ae37923b46ce5235cfd0d0b3.jpg" alt="image4">
+        <img src="https://liliinwonderland.fr/wp-content/uploads/2019/07/visiter-tokyo-guide-liliinwonderland.jpg" alt="image5">
+        <img src="https://i.pinimg.com/736x/f1/df/94/f1df9473b3e7346903d583acbf88b3d1.jpg" alt="image6">
+        <img src="https://www.japan-guide.com/g18/3003_01.jpg" alt="image7">
+    </div>
+</section>
+
+<section id="intro" class="intro-section">
+    <div class="intro-container">
+        <h2>Your Ultimate Guide to Japan: Travel Smarter with These Essential Tips</h2>
+        <p>Thinking of traveling to Japan? This captivating country offers a rich tapestry of culture, history, and natural beauty. Whether you're after scenic landscapes, bustling city life, or ancient traditions, Japan has it all. But with so much to choose from, it can be tough to know where to begin.</p>
+        <p>Fear not! After years of exploring every corner of Japan, I’ve compiled the ultimate travel guide to help you make the most of your trip. From planning the perfect itinerary to avoiding tourist traps, you'll get expert advice that’s practical, fun, and easy to follow.</p>
+        <p>Discover the best times to visit, hidden hotspots, local dining secrets, and tips for smooth travel so you can focus on experiencing Japan like never before.</p>
+        <a href="#travel-tips" class="btn">Start Your Journey</a>
+    </div>
+</section>
+
+
+
+
+<section id="reviews">
+    <h2>User Reviews</h2>
+    <div class="reviews">
+        <div class="review">
+            <div class="review-header">
+                <img src="https://i.pinimg.com/736x/03/77/08/037708e3ac906e8f5888b4654c98dc81.jpg" alt="Goro Majima" class="review-avatar">
+                <h3>Goro Majima - Dotonbori</h3>
+            </div>
+            <p>The Dotonbori tour was miserable! Being the manager of cabaret Grand made me feel like I was in a cage. Definitely gonna unleash in Kabukicho!</p>
+            <div class="rating" id="rating-majima">
+                <!-- Rating stars will be dynamically generated -->
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Goro_Majima" target="_blank">Read more about Goro Majima</a>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <img src="https://pbs.twimg.com/profile_images/1510110158491369473/BQPn8n2f_400x400.jpg" alt="Kazuma Kiryu" class="review-avatar">
+                <h3>Kazuma Kiryu - Kabukicho</h3>
+            </div>
+            <p>The Kabukicho before Majima gave me a fantastic experience with vibrant bars and neon lights. It's the perfect place to explore and enjoy Tokyo's nightlife!</p>
+            <div class="rating" id="rating-kiryu">
+                <!-- Rating stars will be dynamically generated -->
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Kazuma_Kiryu" target="_blank">Read more about Kazuma Kiryu</a>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzY23gv-aAUiAk_S0i5T1ls3CkX9qv7pnx5w&s" alt="Haruka Sawamura" class="review-avatar">
+                <h3>Haruka Sawamura - Okinawa</h3>
+            </div>
+            <p>Okinawa is beautiful! The crystal-clear blue sea and fresh air helped me completely relax. It's the perfect tour for anyone who loves nature and Japanese culture.</p>
+            <div class="rating" id="rating-haruka">
+                <!-- Rating stars will be dynamically generated -->
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Haruka_Sawamura" target="_blank">Read more about Haruka Sawamura</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .star {
+        font-size: 30px;
+        color: gray; 
+        cursor: pointer;
+    }
+
+    .star.selected {
+        color: gold; 
+    }
+</style>
+
+
+    <section>
+    <div class="center" style="margin-bottom: 10px;">
+<div class="box">
+	<div class="box1">
+		<p class="tour textcenter">---------- Calculate your price ----------</p>
+	</div>
+	<div class="container">
+		<div class="info">
+		<div class="chontour input">
+		<label for="toursel">Tour</label>
+		<select name="tours" id="toursel" class="form">
+        <option value="400">Japan (400$)</option>
+        <option value="100">Dotonbori (100$)</option>
+        <option value="150">Kabukicho (150$)</option>
+        <option value="250">Hokkaido (250$)</option>
+        <option value="180">Okinawa (180$)</option>
+        </select>
+		</div>
+		<div class="input">
+		<label for="Number">Number of people</label>
+		<input class="form" type="number" id="numberp">
+		</div>
+		<div class="input"> 
+			<label for="Departdate">Departure Date</label>
+			<input class="form" type="text">
+		</div>
+		<div class="input"> 
+			<label for="Enddate">End Date</label>
+			<input class="form" type="text">
+		</div>
+		<div class="input"> 
+			<label for="name">FullName</label>
+			<input class="form" type="text">
+		</div>
+		<div class="input"> 
+			<label for="phone">Phone</label>
+			<input class="form" type="text">
+		</div>
+
+	<div class="center">
+		<button class="button" onclick="calculate()">Calculate</button>
+	</div>
+	<div class="amount money">Total Amount: </div>
+	<script src="js/fuct.js"></script>
+
+</div>
+</div>
+</div>
+</section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Contact</h3>
+                <ul>
+                    <li>Phone: +84 9418 6083</li>
+                    <li>Email: syhuytran2005@gmail.com</li>
+                    <li>Address: FPT Univerity</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>FAQ</h3>
+                <ul>
+                    <li><a href="faq.html">Visit FAQ Page</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>Made by Kerry</p>
+    </footer>
+    	<script src="js/js.js"></script>
+
+</body>
+</html>
